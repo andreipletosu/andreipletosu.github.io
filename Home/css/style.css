@@ -49,11 +49,10 @@ img{
     border: none;
     border-radius: 50%;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    width: 25svw;
 }
 
 
-@media screen and (max-device-width: 1980px){
+@media screen and (max-device-width: 1280px){
     div#content{
         font-size: 3rem;
         text-align: right;
@@ -64,7 +63,7 @@ img{
         border: none;
         border-radius: 50%;
         box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-        width: 30svw;
+        width: 35%;
     }
 }
 @media screen and (max-device-width: 960px){
