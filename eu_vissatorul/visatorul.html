@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script> 
+        <script type = "text/javascript" src="ebook.js"></script>
+        <title>
+            Ghidul creatorului cu mindeset de succes
+          </title>
+    </head>
+    <body>
+      <div id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=Ad5_JROILDkBHwOLrz7wwVOc0jWeAwmaBZUGwBEVvmMqAegtjze6XwTrLvJrsZo_XE_Fn32g1pVLgF3H&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'pill',
+            color: 'white',
+            layout: 'vertical',
+            label: 'paypal',
+            
+          },
+  
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"amount":{"currency_code":"EUR","value":15}}]
+            });
+          },
+  
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+              
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              let email = orderData.payer.email_address;
+              let name = orderData.payer.name.given_name;
+              let surname = orderData.payer.name.surname;
+              console.log(email,surname,name);
+              // Show a success message within this page, e.g.
+              sendEmail(email,name,surname);
+  
+              // Or go to another URL:  actions.redirect('thank_you.html');
+              
+            });
+          },
+  
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+        <div class="box-shadow">
+            <img id="intro" src="intro.jfif">
+        </div>
+       <!--<div id="myModal" class="text box-shadow-none modal">
+          <h1 class="modal-content">
+            <span class="close">&times;</span>
+            Cel mai bun curs de pe piață cu cel mai bun preț de la cea mai bună pagină de motivație și dezvoltare personală. Informaţiile din acest curs sunt cunoştinţe strânse de-alungul a 2 ani+ de experienţă în Social Media Marketing. 
+            Acest curs conține strategii de promovare + cum poţi face din pagina ta o sursă sigură de venit şi cum poţi scala afacerea ta. 
+            Dacă nu ai experienţă nu e nicio problemă, tot conţinutul este explicat atât pentru cei care au deja câteva cunoştinţe cât şi pentru cei care vor să înceapă de la 0.
+            Am decis să ofer informaţii pe care cei ce vând astfel de cursuri nu vor să le arate publicului şi astfel ce vei găsi aici îţi va rezolva problemele ce le ai legate de creşterea în urmăritori şi lipsa clienţilor + monetizare. 
+            <br>
+            Alegerea îţi aparţine, succes.📈
+          </h1>
+        </div>-->
+        <div class="box-shadow">
+            <img src="1.jfif">
+            <img src="2.jfif">
+            <img src="3.jfif">
+        </div>
+    </body>
+</html>

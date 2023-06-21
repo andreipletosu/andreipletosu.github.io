@@ -1,0 +1,102 @@
+:root{
+    --spacer: 2rem;
+}
+
+body{
+  font-family: "Neue Haas Grotesk Display Pro" !important;
+  font-weight: 500;
+  font-style: italic;
+  background-image: url("../../PortfolioBackground.jpg");
+  background-size: cover;
+}
+
+html,body{
+    margin: 0;
+    height: 100%;
+
+}
+
+div.content-padding{
+
+    padding-left: calc(var(--spacer) * .5) !important;
+    padding-right: calc(var(--spacer) * .5) !important;
+}
+
+div.top-padding{
+    padding-top: calc(var(--spacer)*.75);
+}
+
+div.backgorund{
+    filter: blur(100px);
+    border: none;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#content{
+    font-size: 5rem;
+    text-align: right;
+    color:white;
+    text-shadow: 10px 10px 15px lightslategray;
+    margin-right: 2svw;
+}
+
+img{
+    margin-top: 20svw;
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+
+
+
+@media screen and (max-device-width: 1280px){
+    div#content{
+        font-size: 3rem;
+        text-align: right;
+        color:white;
+        text-shadow: 10px 10px 15px lightslategray;
+    }
+    img{
+        border: none;
+        border-radius: 50%;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        width: 35%;
+    }
+}
+@media screen and (max-device-width: 960px){
+    div#content{
+        font-size: 3rem;
+        text-align: center;
+        color:white;
+        text-shadow: 10px 10px 15px lightslategray;
+    }
+
+    img{
+        border: none;
+        border-radius: 50%;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-device-width: 480px){
+
+    div#content{
+        font-size: 3rem;
+        text-align: center;
+        color:white;
+        text-shadow: 10px 10px 15px lightslategray;
+    }
+
+    img{
+        border: none;
+        border-radius: 50%;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        width: 80%;
+    }
+}

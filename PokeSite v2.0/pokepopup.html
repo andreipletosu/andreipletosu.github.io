@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="source/poke.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>PokeBattle</title>
+    </head>
+
+    <body onLoad="insertPokemons()">
+        <img id="bg" src="background.jpg">
+            <div class="layer">
+            </div>
+        </img>
+        <table class="pokemon" colspan="3">
+                    <tr>
+                        <td id="top">
+                            <button class="plus" onclick="newhealthplus(1);"><img src="giftImg/3.png">+1</button>
+                            <button class="plus" onclick="newhealthplus(5);"><img src="giftImg/4.png">+5</button>
+                            <button class="plus" onclick="newhealthplus(10);"><img src="giftImg/6.png">+10</button> 
+                            <button class="plus" onclick="newhealthplus(100);"><img src="giftImg/7.png">+100</button>
+                            <button class="plus" onclick="newhealthplus(250);"><img src="giftImg/8.png">+250</button>
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="glass-wrapper">
+                            ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+                            <br>
+                            <img id="Pokemon-Image" src="" alt="Pokemon">
+                            <canvas id="canvas"></canvas>
+                            <script type="text/javascript" src="source/poke.js"></script>
+                            <p id="pokemon-name"></p>
+                            <br>_____________________________________________________
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bottom">
+                            <button class="minus" onclick="newhealthminus(1);"><img src="giftImg/2.png">-1</button>
+                            <button class="minus" onclick="newhealthminus(5);"><img src="giftImg/5.png">-5</button>
+                            <button class="minus" onclick="newhealthminus(10);"><img src="giftImg/1.png">-10</button>
+                            <button class="minus" onclick="newhealthminus(100);"><img src="giftImg/12.png">-100</button>
+                            <button class="minus" onclick="newhealthminus(250);"><img src="giftImg/9.png">-250</button>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="special">
+                            <button class="special" onclick="instakill();"><img src="giftImg/10.png"><p>Shoutout every live + Instakill + Story</p></button>
+                            <button class="special" onclick="instakill();"><img src="giftImg/11.png"><p>Story + Instakill</p></button>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+          
+        </table>
+        <section id="#area">
+        </section>
+        <form name="myForm"  action="" METHOD="GET">
+            <input type="file" name="insertpokemons" accept=".txt">
+            <input type="button" name="button2" Value="Upload" onclick="insertPokemons();">
+            <br>
+            <br>
+            Shoutout:
+            <input type="text" id="fname" name="Shoutout" value="">
+            <input type="button" name="button" Value="Add" onclick="shoutouts();">
+        </form>
+    </body>
+    <embed src="pokemon.txt" class="hide">
+</html>
