@@ -118,3 +118,14 @@ button.visatorul{
 button.poke{
   margin-top: -15vw;
 }
+
+img{
+  position: fixed;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  z-index: 3;
+  filter: blur(2px);
+  width: 40svw;
+  margin-right: -50svw;
+}
