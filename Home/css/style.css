@@ -45,16 +45,15 @@ div#content{
 }
 
 img{
-    margin-top: 20svw;
+    margin-top: 14svw;
     border: none;
     border-radius: 50%;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    width: 25svw;
 }
 
 
-
-
-@media screen and (max-device-width: 1280px){
+@media screen and (max-device-width: 1980px){
     div#content{
         font-size: 3rem;
         text-align: right;
@@ -65,7 +64,7 @@ img{
         border: none;
         border-radius: 50%;
         box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-        width: 35%;
+        width: 30svw;
     }
 }
 @media screen and (max-device-width: 960px){
