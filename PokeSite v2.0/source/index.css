@@ -13,7 +13,7 @@ div.background{
     background-size: cover;
     position: absolute;
     display: flex;
-    filter: blur(3px);
+    filter: blur(2px);
     border: none;
     height: 100%;
     width: 100%;
