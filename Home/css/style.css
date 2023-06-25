@@ -44,7 +44,7 @@ div#content{
     margin-right: 2svw;
 }
 
-img{
+img.back{
     margin-top: 10%;
     border: none;
     border-radius: 50%;
@@ -98,3 +98,11 @@ img{
         width: 80%;
     }
 }
+
+.no-border{
+    display: flex;
+    filter: grayscale(100);
+    width: 5svw;
+    height: 5svw;
+  }
+  
