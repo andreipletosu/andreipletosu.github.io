@@ -294,3 +294,12 @@ tr.footer{
     80%{-webkit-transform:scale(1.2)}
     to{-webkit-transform:scale(1)}
 }
+
+.no-border{
+    display: flex;
+    filter: grayscale(100);
+    width: 5svw;
+    height: 5svw;
+    box-shadow: none !important;
+  }
+  
